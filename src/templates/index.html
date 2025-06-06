@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILMFLIX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f4f4f4; */
+            background-image: url("https://images.unsplash.com/photo-1542204165-65bf26472b9b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ");
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(236, 234, 234, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #e10808;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #e10808;
+        }
+
+        input[type="text" ] {
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+            color: rgb(255, 0, 0);
+        }
+
+        .error-message {
+            color: #ff0000;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>FILMFLIX - WATCH OR NOT...!</h1>
+    <form action="/recommend" method="POST">
+        <label for="movie_title">Enter a movie you liked:</label>
+        <input type="text" id="movie_title" name="movie_title" required>
+        <button type="submit">Get Recommendations</button>
+    </form>
+</body>
+</html>
